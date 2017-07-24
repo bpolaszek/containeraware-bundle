@@ -1,0 +1,31 @@
+{
+  "name": "bentools/containeraware-bundle",
+  "description": "Symfony Bundle: A ContainerAware compiler pass to automatically inject your service container.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Beno!t POLASZEK",
+      "email": "bpolaszek@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.9",
+    "symfony/symfony": "^2.7|^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "BenTools\\ContainerAwareBundle\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BenTools\\ContainerAwareBundle\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+    ]
+  }
+}
