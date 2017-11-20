@@ -20,7 +20,7 @@ class AppKernel extends Kernel
     {
         $bundles = [
             // ...
-            new BenTools\ContainerAwareBundle\ContainerAwareBundle(),
+            new BenTools\ContainerAwareBundle\ContainerAwareBundle(), // Insert at the bottom of the array for better performances
         ];
 
         return $bundles;
