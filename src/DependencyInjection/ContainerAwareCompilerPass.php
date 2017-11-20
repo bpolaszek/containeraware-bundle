@@ -18,7 +18,9 @@ class ContainerAwareCompilerPass implements CompilerPassInterface
             $definition = $container->findDefinition($serviceId);
             $class = $definition->getClass();
             if (is_a($class, 'Symfony\Component\DependencyInjection\ContainerAwareInterface', true)) {
-                $definition->addMethodCall('setContainer', array(new Reference('service_container')));
+                if (!$definition->hasMethodCall('setContainer')) {
+                    $definition->addMethodCall('setContainer', array(new Reference('service_container')));
+                }
             }
         }
     }
