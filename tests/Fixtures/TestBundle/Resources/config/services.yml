@@ -2,3 +2,4 @@ services:
 
     test.container_aware_service:
         class: BenTools\ContainerAwareBundle\Tests\Fixtures\TestBundle\ContainerAwareService
+        public: true

@@ -22,6 +22,8 @@ env:
    - SYMFONY_VERSION=3.1.*
    - SYMFONY_VERSION=3.2.*
    - SYMFONY_VERSION=3.3.*
+   - SYMFONY_VERSION=3.4.*
+   - SYMFONY_VERSION=4.0.*
 
 matrix:
     fast_finish: true
@@ -48,6 +50,20 @@ matrix:
           env: SYMFONY_VERSION=3.3.*
         - php: '5.4'
           env: SYMFONY_VERSION=3.3.*
+        - php: '5.3'
+          env: SYMFONY_VERSION=3.4.*
+        - php: '5.4'
+          env: SYMFONY_VERSION=3.4.*
+        - php: '5.3'
+          env: SYMFONY_VERSION=4.0.*
+        - php: '5.4'
+          env: SYMFONY_VERSION=4.0.*
+        - php: '5.5'
+          env: SYMFONY_VERSION=4.0.*
+        - php: '5.6'
+          env: SYMFONY_VERSION=4.0.*
+        - php: '7.0'
+          env: SYMFONY_VERSION=4.0.*
 
 
 before_install:
