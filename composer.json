@@ -9,11 +9,11 @@
     }
   ],
   "require": {
-    "php": ">=5.3.9",
-    "symfony/symfony": "^2.7|^3.0|^4.0"
+    "php": ">=5.3.9"
   },
   "require-dev": {
-    "phpunit/phpunit": "@stable"
+    "phpunit/phpunit": "@stable",
+    "symfony/symfony": "^2.7|^3.0|^4.0"
   },
   "autoload": {
     "psr-4": {
