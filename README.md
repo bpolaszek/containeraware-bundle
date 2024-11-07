@@ -6,6 +6,9 @@
 
 This Symfony bundle automatically injects the **Service Container** into all your services that implement `Symfony\Component\DependencyInjection\ContainerAwareInterface`.
 
+> [!IMPORTANT]  
+> This repository is no longer maintained and may be removed in a near future. You may consider creating a fork if you still require it.
+
 Installation
 ------------
 > composer require bentools/containeraware-bundle
